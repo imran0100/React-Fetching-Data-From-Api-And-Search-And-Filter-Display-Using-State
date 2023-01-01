@@ -21,7 +21,12 @@ function App() {
 
   return (
     <div className="container">
-      <input type="text" value={searchQuery} onChange={handleChange} />
+      <input
+        type="text"
+        value={searchQuery}
+        onChange={handleChange}
+        autoFocus
+      />
 
       {filteredUsers.map((user) => (
         <div className="disDataDom">
