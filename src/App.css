@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  padding: 15px;
+  margin: 0 auto;
+  width: 400px;
+  height: 550px;
+  background-color: rgb(238, 238, 238);
+  margin-top: 50px;
+}
+input {
+  width: 250px;
+  height: 35px;
+  margin-bottom: 30px;
+}
+.disDataDom div {
+  background-color: rgb(255, 255, 255);
+  height: 40px;
+  border: solid 1px rgb(7, 7, 7);
+  padding: 3px;
+}
