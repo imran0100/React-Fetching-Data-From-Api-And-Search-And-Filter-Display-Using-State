@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 function App() {
   const [users, setUsers] = useState([]);
@@ -9,7 +9,9 @@ function App() {
     const data = await response.json();
     setUsers(data);
   }
-  fetchData();
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   function handleChange(event) {
     setSearchQuery(event.target.value);
