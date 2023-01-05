@@ -31,7 +31,7 @@ function App() {
       />
 
       {filteredUsers.map((user) => (
-        <div className="disDataDom">
+        <div key={user.id} className="disDataDom">
           <div>{user.name}</div>
         </div>
       ))}
